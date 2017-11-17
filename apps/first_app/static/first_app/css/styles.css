@@ -1,0 +1,51 @@
+body {
+    width: 1400px;
+    font-family: Oswald;
+    font-size: 14pt;    
+    position: absolute;
+}
+
+h1{
+    position: relative;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+form{
+    position: relative;
+    margin-left: 50px; 
+}
+
+.scrollbar{
+    width: 400px;
+    overflow-y: hidden;
+}
+
+.ratings{
+    width: 400px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.rating{
+    width: 150px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+
+.add {
+    position: absolute;
+    display: inline-block;
+}

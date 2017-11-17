@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'first_app/css/styles.css' %}" media="screen" title="no title" charset="utf-8">    
+    <title>Add Book</title>
+</head>
+<body>
+    <form action="/success" method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="jflakfjal;kgjal;kj"/>
+            {% csrf_token %}
+            <p>BOOK TITLE: <input type="text" name="book_title"></p>
+            <p>AUTHOR: <input type="text" name="author"></p>
+            <p>CHOOSE FROM THE LIST:
+                <select>
+                    <option value="Jane Austen">Jane Austen</option>
+                    <option value="Nathaniel Hawthorne">Nathaniel Hawthorne</option>
+                    <option value="Bram Stoker">Bram Stoker</option>
+                    <option value="Fyodor Dostoyevsky">Fyodor Dostoyevsky</option>                    
+                </select>
+            </p>
+            <p>ADD A NEW AUTHOR: <input type="text" name="text"></p>
+            <p>REVIEW:
+                <p><textarea type="text" width="200"></textarea></p>
+            </p>
+            <p>RATING:
+                <select>
+                    <option value="span"><span>☆</span></option>
+                    <option value="span"><span>☆</span><span>☆</span></option>
+                    <option value="span"><span>☆</span><span>☆</span><span>☆</span></option>
+                    <option value="span"><span>☆</span><span>☆</span><span>☆</span><span>☆</span></option>                    
+                    <option value="span"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></option>                                        
+                </select>
+            </p>
+            <input type="submit" value="Add Book and Review"></>
+        </form>
+        <div class="Add">
+            <a href="Home">Home</a>
+            <a href="Logout">Logout</a>     
+        </div>   
+</body>
+</html>

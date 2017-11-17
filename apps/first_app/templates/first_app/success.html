@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'first_app/css/styles.css' %}" media="screen" title="no title" charset="utf-8">
+    <title>Success</title>
+</head>
+<body>
+    <h1>WELCOME</h1>
+        <p><h2>Recent Book Reviews</h2></p>
+        <div class="ratings">
+            <h3>Corey Taylor</h3>
+                <p>This book rules! I love the smell and how it feels in my hands. Toss your Kindles in the trash.</p>
+            <p>Rating:</p>
+            <div class=rating>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <h3>Eddie Vedder</h3>
+                <p>This book blows! There were multiple grammer errors. Reading sucks.</p>
+            <p>Rating:</p>
+            <div class=rating>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <h3>Corey Taylor</h3>
+                <p>This book rules! I love the smell and how it feels in my hands. Toss your Kindles in the trash.</p>
+            <p>Rating:</p>
+            <div class=rating>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+         </div>
+        <h2>Other Books with Reviews:</h2>
+        <iframe src="books" width="400" height="300" scrolling="yes"></iframe>
+    <div class="Add">
+        <a href="Add Book and Review">Add Book and Review</a> 
+        <a href="Logout">Logout</a>
+    </div>       
+</body>
+</html>
